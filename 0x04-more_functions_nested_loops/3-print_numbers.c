@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
- * print_numbers - Print the numbers since 0 up to 9
- * Return: The numbers since 0 up to 9
+ * print_numbers - func checks for checks for a digit (0 through 9).
+ *
+ * Return: Always 0.
  */
 
 void print_numbers(void)
-
 {
+	int c;
 
-	int x;
-
-	for (x = 0; x <=9; x++)
+	for (c = 48; c <= 58; c++)
 	{
-	_putchar(x + '0');
+		_putchar(c);
 	}
-	_putchar('\n');
+		_putchar('\n');
 }
