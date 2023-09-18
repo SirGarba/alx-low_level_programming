@@ -3,7 +3,8 @@
 #include <time.h>
 
 /**
- * main - program that generates random valid password for the program 101-crackers
+ * main - program that generates random valid
+ * password for the program 101-crackers
  * Return: Always 0 (success)
  */
 int main(void)
