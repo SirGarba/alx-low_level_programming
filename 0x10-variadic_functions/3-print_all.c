@@ -19,10 +19,6 @@ void print_all(const char * const format, ...)
 	{
 		switch (format[i])
 		{
-			case 'c':
-				printf("%c", va_arg(spc, int));
-				check_stat = 0;
-				break;
 			case 'i':
 				printf("%d", va_arg(spc, int));
 				check_stat = 0;
@@ -31,11 +27,15 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(spc, double));
 				check_stat = 0;
 				break;
+			case 'c':
+				printf("%c", va_arg(spc, int));
+				check_stat = 0;
+				break;
 			case 's':
 				str = va_arg(spc, char *);
 				if (str == NULL)
 					str = "(nil)";
-				printf("%s%s", str);
+				printf("%s", str);
 				break;
 			default:
 				check_stat = 1;
