@@ -20,15 +20,15 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%s%c", va_arg(spc, int));
+				printf("%c", va_arg(spc, int));
 				check_stat = 0;
 				break;
 			case 'i':
-				printf("%s%d", va_arg(spc, int));
+				printf("%d", va_arg(spc, int));
 				check_stat = 0;
 				break;
 			case 'f':
-				printf("%s%f", va_arg(spc, double));
+				printf("%f", va_arg(spc, double));
 				check_stat = 0;
 				break;
 			case 's':
