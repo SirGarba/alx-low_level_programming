@@ -1,6 +1,7 @@
 #include "variadic_function.h"
 /**
- * print_all - print any argument provided to function
+ * print_all - print any argument provided to
+ * function
  * @format: the argument specifier
  *
  * Return: any argument given based on format specifier
